@@ -1,0 +1,99 @@
+/*
+    App
+*/
+.main {
+    display: flex;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.section {
+    width: 100%;
+}
+
+.section:first-child {
+    padding-right: 15px;
+    border-right: 1px solid #ddd;
+}
+
+.section:last-child {
+    padding-left: 15px;
+}
+
+
+/*
+    ConversationList
+*/
+.form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.submit {
+    padding: 10px 15px;
+    border: none;
+    background-color: cornflowerblue;
+}
+
+.submit:hover {
+    color: #fff;
+    background-color: #5077BE;
+}
+
+/*
+    ConversationList
+*/
+.conversationsList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.conversationsList li {
+    padding: 15px;
+}
+
+.conversationsList li:not(:last-child) {
+    border-bottom: 1px dashed #aaa;
+}
+
+.conversationsList li:hover {
+    background-color: #eee;
+}
+
+
+/*
+    ConversationMessage
+*/
+.conversationMessage {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.conversationMessage li {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+
+/*
+    MessageBubble
+*/
+.conversationMessage .incoming {
+    align-self: end;
+    background-color: cornflowerblue;
+}
+
+.conversationMessage .outgoing {
+    align-self: start;
+    background-color: #ccc;
+}

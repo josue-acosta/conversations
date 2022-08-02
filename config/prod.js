@@ -1,0 +1,16 @@
+module.exports = {
+    cookieKey: process.env.COOKIE_KEY,
+    countNumber: process.env.COUNT_NUMBER,
+    myGoogleID: process.env.MY_GOOGLE_ID,
+    googleClientID: process.env.GOOGLE_CLIENT_ID,
+    googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    identity: process.env.IDENTITY,
+    mongoURI: process.env.MONGO_URI,
+    serviceSid: process.env.SERVICE_SID,
+    twilioAccountSid: process.env.TWILIO_ACCOUNT_SID,
+    twilioApiKey: process.env.TWILIO_API_KEY,
+    twilioApiSecret: process.env.TWILIO_API_SECRET,
+    twilioAuthToken: process.env.TWILIO_AUTH_TOKEN,
+    twilioPhoneNumber: process.env.TWILIO_PHONE_NUMBER,
+    twilioUrl: process.env.TWILIO_URL,
+}
