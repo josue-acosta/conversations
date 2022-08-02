@@ -16,16 +16,19 @@
 }
 
 .section:last-child {
+    position: relative;
     padding-left: 15px;
 }
 
 
 /*
-    ConversationList
+    ConversationThread
 */
 .form {
     display: flex;
     justify-content: space-between;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
 }
 
 .input {
@@ -45,6 +48,11 @@
     background-color: #5077BE;
 }
 
+.conversationThread {
+    position: relative;
+}
+
+
 /*
     ConversationList
 */
@@ -56,6 +64,10 @@
 
 .conversationsList li {
     padding: 15px;
+}
+
+.selectedConversation {
+    background-color: cornflowerblue;
 }
 
 .conversationsList li:not(:last-child) {
@@ -76,6 +88,9 @@
     list-style: none;
     margin: 0;
     padding: 0;
+
+    height: 550px;
+    overflow-y: scroll;
 }
 
 .conversationMessage li {
@@ -88,12 +103,23 @@
 /*
     MessageBubble
 */
-.conversationMessage .incoming {
-    align-self: end;
-    background-color: cornflowerblue;
+.conversationMessage li {
+    display: flex;
+    flex-direction: column;
+}
+
+.conversationMessage .timestamp {
+    font-size: 12px;
 }
 
 .conversationMessage .outgoing {
+    align-self: end;
+    background-color: cornflowerblue;
+    text-align: right;
+}
+
+.conversationMessage .incoming {
     align-self: start;
     background-color: #ccc;
+    text-align: left;
 }

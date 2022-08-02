@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors')
 
-const keys = require('./config/keys');
+const keys = require('./client/src/config/keys');
 
 // app configuration
 const app = express();

@@ -12,9 +12,19 @@ export default class ConversationMessages extends Component {
             <ul className={styles.conversationMessage}>
                 {messages.map(item => {
                     if (item.author === identity) {
-                        return <MessageBubble key={item.index} direction="outgoing" message={item.body} />
+                        return <MessageBubble 
+                        key={item.state.index}
+                        direction="outgoing"
+                        message={item.state.body}
+                        timestamp={item.state.timestamp}
+                        />
                     } else {
-                        return <MessageBubble key={item.index} direction="incoming" message={item.body} />
+                        return <MessageBubble 
+                        key={item.state.index}
+                        direction="incoming"
+                        message={item.state.body}
+                        timestamp={item.state.timestamp}
+                        />
                     }
                 })}
             </ul>
