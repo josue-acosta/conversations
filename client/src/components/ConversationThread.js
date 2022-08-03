@@ -95,8 +95,15 @@ export default class ConversationThread extends Component {
                     messages={messages}
                 />
 
-                <form className={styles.form}>
-                    <input type="text" name="message" placeholder="Enter message..." className={styles.input} />
+                <form className={styles.form} onSubmit={this.sendMessage} >
+                    <input 
+                    type="text" 
+                    name="message"
+                    placeholder="Enter message..." 
+                    className={styles.input}
+                    onChange={this.onMessageChanged}
+                    value={this.state.newMessage} />
+
                     <input type="submit" value="Submit" className={styles.submit} />
                 </form>
             </div>
